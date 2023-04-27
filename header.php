@@ -37,13 +37,13 @@ session_start();
 	
 	<div class="topbar stick">
 		<div class="logo">
-			<a href="index.php"><img src="images/logo.png" alt="" style="width:90; height:34;"></a>
+			<a href="home.php"><img src="images/logo.png" alt="" style="width:90; height:34;"></a>
 		</div>
 		
 		<div class="top-area">
 			<ul class="main-menu">
 				<li>
-					<a href="index.php" title="">Home</a>
+					<a href="home.php" title="">Home</a>
 				</li>
 			</ul>
 
