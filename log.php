@@ -34,7 +34,7 @@ $password=$_POST['password'];
 				
 				$_SESSION['user']='student';
 				$_SESSION['uid']=$cc['id'];
-				header("location:https://dramatic-dolls-production.up.railway.app/index.php");
+				header('location:index.php');
 			}
 			else
 			{
