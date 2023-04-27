@@ -35,11 +35,13 @@ $password=$_POST['password'];
 				$_SESSION['user']='student';
 				$_SESSION['uid']=$cc['id'];
 				header('location:index.php');
+				exit();
 			}
 			else
 			{
 				echo "Error : ".mysqli_error($con);
 				header("location:login.php?st=fail");
+				exit();
 			}
 		}
 		elseif(($row['type']=="staff"))
