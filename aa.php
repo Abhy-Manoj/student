@@ -15,11 +15,12 @@ if (file_exists($filename) == true){
 <?php
 
 // Establish a database connection
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "mydb";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$servername = "containers-us-west-177.railway.app";
+$username = "root";
+$password = "vLAW5CRDbAmIuhGGFvX8";
+$dbname = "railway";
+$port = 7687;
+$conn = mysqli_connect($servername, $username, $password, $dbname,$port);
 
 // Check if the connection was successful
 if (!$conn) {
