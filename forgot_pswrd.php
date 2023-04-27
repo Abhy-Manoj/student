@@ -43,7 +43,7 @@
 							  <input type="email" id="input" name="email" required="required"/>
 							  <label class="control-label" for="input" >Email</label><i class="mtrl-select"></i>
 							</div>
-							<a href="login.php" title="" class="forgot-pwd">Login</a>
+							<a href="index.php" title="" class="forgot-pwd">Login</a>
 							<div class="submit-btns">
 								<input type="submit" class="btn btn-primary" name="submit" value="Submit">
 							</div>
