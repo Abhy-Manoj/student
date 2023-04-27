@@ -16,10 +16,8 @@ $password=$_POST['password'];
 	{
 
 		$sel="SELECT * FROM login WHERE username='$username' and password='$password'";
-		echo $sel;
 		$result = mysqli_query($con,$sel) or die(mysql_error());
 		$row=mysqli_fetch_array($result);
-		//echo $row['type'];
 		
 		if($row['type']=="student")
 		{	
@@ -39,7 +37,7 @@ $password=$_POST['password'];
 			}
 			else
 			{
-				echo "Error : ".mysqli_error($con);
+				//echo "Error : ".mysqli_error($con);
 				header("location:login.php?st=fail");
 				exit();
 			}
@@ -53,10 +51,10 @@ $password=$_POST['password'];
 			if($count==1)
 			{
 				$query1 = "SELECT * FROM staff WHERE staff_email='$username' and staff_password='$password'";
-				echo $query1;
+				//echo $query1;
 				$datas=mysqli_query($con,$query1);
 				$cc=mysqli_fetch_array($datas);
-				echo $cc['name'];
+				//echo $cc['name'];
 				
 				$_SESSION['user']='staff';
 				$_SESSION['uid']=$cc['id'];
@@ -78,10 +76,10 @@ $password=$_POST['password'];
 			if($count==1)
 			{
 				$query1 = "SELECT * FROM customer WHERE customer_email='$username' and customer_password='$password'";
-				echo $query1;
+				//echo $query1;
 				$datas=mysqli_query($con,$query1);
 				$cc=mysqli_fetch_array($datas);
-				echo $cc['name'];
+				//echo $cc['name'];
 				
 				$_SESSION['user']='customer';
 				$_SESSION['uid']=$cc['id'];
