@@ -5,7 +5,7 @@
 			<ul class="naves">
 				<li>
 					<i class="ti-clipboard"></i>
-					<a href="index.php" title="">Home</a>
+					<a href="home.php" title="">Home</a>
 				</li>
 				<!--
 				<li>
