@@ -38,7 +38,7 @@ $password=$_POST['password'];
 			else
 			{
 				//echo "Error : ".mysqli_error($con);
-				header("location:login.php?st=fail");
+				header("location:home.php?st=fail");
 				exit();
 			}
 		}
@@ -63,7 +63,7 @@ $password=$_POST['password'];
 			else
 			{
 				//echo "Error : ".mysqli_error($con);
-				header("location:login.php?st=fail");
+				header("location:home.php?st=fail");
 			}
 			
 		}
@@ -88,12 +88,12 @@ $password=$_POST['password'];
 			else
 			{
 				//echo "Error : ".mysqli_error($con);
-				header("location:login.php?st=fail");
+				header("location:home.php?st=fail");
 			}
 			
 		}
 		else{
-			header("location:login.php?st=fail");
+			header("location:home.php?st=fail");
 		}
 	}
 }
