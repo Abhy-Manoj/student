@@ -32,7 +32,7 @@ $password=$_POST['password'];
 				
 				$_SESSION['user']='student';
 				$_SESSION['uid']=$cc['id'];
-				header("location:index.php");
+				header("location:home.php");
 				exit();
 			}
 			else
@@ -83,7 +83,7 @@ $password=$_POST['password'];
 				
 				$_SESSION['user']='customer';
 				$_SESSION['uid']=$cc['id'];
-				header("location:user/index.php");
+				header("location:user/home.php");
 			}
 			else
 			{
