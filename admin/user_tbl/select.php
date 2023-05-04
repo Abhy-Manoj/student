@@ -10,11 +10,7 @@ $i=0;
 		<link rel="stylesheet" type="text/css" href="datatables.min.css">
  
 		<script type="text/javascript" src="datatables.min.js"></script>
-		<script type="text/javascript" charset="utf-8">
-			$(document).ready(function() {
-				$('#example').DataTable();
-			} );
-		</script>
+		
 
 <style>
 .hiddentd
@@ -85,6 +81,24 @@ return false;
 }
 </script>
     
+
+<form method="post">
+		<label>Name ‎ </label>
+		<input type="text" name="name">
+		<label>‎ ‎  Description ‎ </label>
+		<select name="dept">
+		<?php
+		$sel=mysqli_query($con,"SELECT * FROM `department`");
+		while($row=mysqli_fetch_array($sel))
+		{
+		?>
+		<option value="<?php echo $row['id']; ?>"><?php echo $row['name']; ?></option>
+		<?php
+		}
+		?>
+	  </select>
+		<input type="submit" name="search">
+   </form>
 	
 	<?php
 
@@ -119,9 +133,21 @@ while ($row2 = mysqli_fetch_array($result2))
    echo "<tbody>";
    
             
-            
-         
- 	$result = mysqli_query($con,"SELECT * FROM $table ");
+   if(isset($_POST['search']))
+   {
+	   $name=$_POST['name'];
+	   $dept=$_POST['dept'];
+	   $result=mysqli_query($con,"SELECT * FROM `student` where name='$name' or 	department='$dept'");
+	   //echo "SELECT * FROM `student` where name='$name' and 	department='$dept'";
+	   $rows=mysqli_num_rows($result);
+	   if($rows==0)
+	   {
+		   echo "<p style='color:red;'>Not Found</p>";
+	   }
+   }        
+   else{   
+	$result = mysqli_query($con,"SELECT * FROM $table ");
+   }      
 	
 
 		while($row = mysqli_fetch_array($result))
@@ -141,6 +167,13 @@ $row2 =mysqli_fetch_array($result2);
 		
 
 			echo "<td >  $row2[contact_person]</td>";
+				
+			}
+			elseif($k==9)
+			{
+			  
+
+			echo "<td> <img src='uploads/$row[$k]' width='100'></td>";
 				
 			}
 			
@@ -166,13 +199,7 @@ $row2 =mysqli_fetch_array($result2);
 			}
 			
 			
-				elseif($k==40)
-			{
-			  
-
-			echo "<td > <img src='uploads/$row[$k]' width='100'></td>";
 				
-			}
 			
 			else
 			{
