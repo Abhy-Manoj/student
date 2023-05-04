@@ -97,5 +97,4 @@ $password=$_POST['password'];
 		}
 	}
 }
-	
 ?>
