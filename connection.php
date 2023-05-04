@@ -1,7 +1,6 @@
 <?php
-session_start();
 $servername = "containers-us-west-177.railway.app";
-$username = "root";
+;$username = "root";
 $password = "vLAW5CRDbAmIuhGGFvX8";
 $dbname = "railway";
 $port = 7687;
