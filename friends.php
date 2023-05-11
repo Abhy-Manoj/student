@@ -4,7 +4,6 @@ include("connection.php");
 
 
 
-
 ?>
 <!--
 <div class="widget friend-list stick-widget">
