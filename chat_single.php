@@ -3,7 +3,6 @@ error_reporting(0);
 include("connection.php");
 
 
-
 if(isset($_POST['ccc']))
 			{
 				$date=date('Y-m-d H:m:s');
