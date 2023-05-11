@@ -46,7 +46,7 @@ include("header.php");
 											</div>
 											
 											<div class="submit-btns">
-												<a href="index.php" class="btn btn-danger">Cancel</a>
+												<a href="home.php" class="btn btn-danger">Cancel</a>
 												<input type="submit" class="btn btn-primary" name="submit">
 											</div>
 										</form>
