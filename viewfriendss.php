@@ -5,7 +5,6 @@ include("header.php");
 $sel=mysqli_query($con,"SELECT * FROM `student` WHERE `id`='$_SESSION[uid]'");
 $row=mysqli_fetch_array($sel);
 
-
 ?>
 	
 	<?php
