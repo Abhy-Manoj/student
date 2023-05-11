@@ -83,7 +83,7 @@
 									$sql5="UPDATE `student` SET `image`='$target_path1' WHERE `id` ='$_SESSION[uid]'";
 									//echo $sql5;
 									$res=mysqli_query($con,$sql5);
-									
+								
 								}
 								}
 								?>
