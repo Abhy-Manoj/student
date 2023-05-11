@@ -1,8 +1,7 @@
 <?php
 include("connection.php");
 include("header.php");
-?>
-		
+?>		
 	<section>
 		<div class="gap gray-bg">
 			<div class="container-fluid">
