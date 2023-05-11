@@ -91,7 +91,6 @@ $row1=mysqli_fetch_array($sel1);
 			</div>
 		</div>	
 	</section>
-
 <?php
 include("footer.php");
 ?>
