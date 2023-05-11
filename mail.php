@@ -9,7 +9,6 @@ $url="https://alc-training.in/gateway.php?";
 
 
 
-
 $message = urlencode($msg);
 $ch = curl_init();
 if (!$ch){die("Couldn't initialize a cURL
