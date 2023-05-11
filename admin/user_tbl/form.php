@@ -74,7 +74,24 @@ if($i==1 )
 	//echo "<td>Male <input type='radio' name='$name'> </td>";
 	
 }
-
+elseif($i==3)
+{
+	echo "<div class='col-md-6'>
+			<div class='form-group'>
+			<label>".str_replace('_', ' ', $name)."</label>
+			<input type='email' name='$name'class='form-control' required> 
+			</div>
+			</div>";
+}
+elseif($i==4)
+{
+	echo "<div class='col-md-6'>
+			<div class='form-group'>
+			<label>".str_replace('_', ' ', $name)."</label>
+			<input type='text' name='$name'class='form-control' pattern='[0-9]{10}' title='Enter correct number!' required> 
+			</div>
+			</div>";
+}
 elseif($i==5)
 {
 	echo "<div class='col-md-6'>
