@@ -12,7 +12,7 @@ $row1=mysqli_fetch_array($sel1);
 	<?php
 	include("profile-head.php");
 	?>
-		
+	
 	<section>
 		<div class="gap gray-bg">
 			<div class="container-fluid">
