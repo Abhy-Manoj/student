@@ -8,7 +8,7 @@
 				<textarea rows="2" placeholder="write something"></textarea>
 				<div class="attachments">
 					<ul>
-						
+					
 						<li>
 							<button type="submit">Post</button>
 						</li>
