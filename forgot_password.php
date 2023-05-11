@@ -14,5 +14,4 @@ if(isset($_POST['submit']))
 	include('mail.php');
 }
 
-
 ?>
