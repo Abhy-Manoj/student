@@ -11,7 +11,7 @@
 			<i class="ti-info-alt"></i>
 			<a title="" href="edit-profile.php">Basic info</a>
 		</li>
-		
+	
 		<li>
 			<i class="ti-lock"></i>
 			<a title="" href="change-password.php">change password</a>
