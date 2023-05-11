@@ -68,8 +68,17 @@ include("connection.php");
 							<h4><a title=""><?php echo $row['title'] ?></a></h4>
 							<span><?php echo $row1['name'] ?> | published: <?php echo $row['date'] ?></span>
 							<a href="project_single.php?id=<?php echo $row['id'] ?>" title="" class="add-butn" data-ripple="">View More	</a>
+							<?php
+							if($_SESSION['uid']==$row1['id'])
+							{
+							?>
 							<a href="editproject.php?id=<?php echo $row['id'] ?>" title="" class="add-butn more-action" data-ripple="">Edit</a>
-						</div>
+							<?php
+							}
+							else{
+								
+							}
+							?>						</div>
 					</div>
 				</li>
 			<?php
