@@ -10,7 +10,7 @@ if ($_SESSION['user']=="")
 	  header("location:login.php");
 }
 ?>
-		
+	
 	<section>
 		<div class="gap gray-bg">
 			<div class="container-fluid">
